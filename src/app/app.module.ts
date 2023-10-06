@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,20 +16,26 @@ import { RenduDirective } from './shared/rendu.directive';
 import { NonRenduDirective } from './shared/non-rendu.directive';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatListModule} from '@angular/material/list';
+import { AssignmentDetailComponent } from './assignments/assignment-detail/assignment-detail.component';
+import { AddAssignmentComponent } from './assignments/add-assignment/add-assignment.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AssignmentsComponent,
     RenduDirective,
-    NonRenduDirective
+    NonRenduDirective,
+    AssignmentDetailComponent,
+    AddAssignmentComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule, MatIconModule, MatDividerModule,
     MatCardModule, MatFormFieldModule, MatInputModule,
-    FormsModule, MatDatepickerModule, MatNativeDateModule
+    FormsModule, MatDatepickerModule, MatNativeDateModule,
+    MatListModule, MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

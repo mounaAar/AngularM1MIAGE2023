@@ -11,9 +11,13 @@ export class AssignmentsComponent implements OnInit {
   color = 'green';
   id="monParagraphe";
   boutonDesactive = true;
-  // pour le formulaire
-  nomDevoir=""
-  dateDeRendu?:Date=undefined;
+
+  // pour afficher tantot le formulaire,
+  // tantot la liste des assignments
+  formVisible = false;
+
+
+  assignmentSelectionne?:Assignment;
 
   assignments:Assignment[] = [
     {
@@ -50,17 +54,17 @@ export class AssignmentsComponent implements OnInit {
     else return 'red';
   }
 
-  onSubmit(event:any) {
-    this.titre = "Vous avez tapé : " + this.dateDeRendu;
-    console.log(event)
 
-    let a = new Assignment();
-    a.nom = this.nomDevoir;
-    if(this.dateDeRendu)
-      a.dateDeRendu = this.dateDeRendu;
+  assignmentClique(a:Assignment) {
+    this.assignmentSelectionne = a;
+  }
 
-    a.rendu = false;
+  onAddAssignmentBtnClick() {
+  this.formVisible = true;
+  }
 
-    this.assignments.push(a);
+  onNouvelAssignment(event:Assignment) {
+    this.assignments.push(event);
+    this.formVisible = false;
   }
 }
