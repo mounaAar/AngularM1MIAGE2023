@@ -29,3 +29,16 @@ section {
   justify-content: center;
   width: 120px;
 }
+
+.mat-sidenav-container{
+  height: calc(205vh - 115vh);
+}
+.mat-sidenav{
+  width: 200px;
+  background-color: pink;
+
+}
+
+.mat-toolbar{
+  background-color: plum;
+}

@@ -67,4 +67,12 @@ export class AssignmentsComponent implements OnInit {
     this.assignments.push(event);
     this.formVisible = false;
   }
+  onDeleteAssignment(a:Assignment) {
+    
+    const pos = this.assignments.indexOf(a);
+
+    
+    this.assignments.splice(pos, 1);
+  }
+
 }
