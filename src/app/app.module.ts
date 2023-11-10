@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< HEAD
 import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule }from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
@@ -43,6 +44,17 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     FormsModule, MatDatepickerModule, MatNativeDateModule,
     MatListModule, MatCheckboxModule,
     MatToolbarModule, MatSidenavModule,MatSliderModule,
+=======
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule
+>>>>>>> parent of c1a6e63 (jq ajout assignment)
   ],
   providers: [],
   bootstrap: [AppComponent]
