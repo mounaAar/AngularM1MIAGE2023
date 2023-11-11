@@ -9,9 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSliderModule } from '@angular/material/slider';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AssignmentsComponent } from './assignments/assignments.component';
@@ -22,7 +20,6 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatListModule} from '@angular/material/list';
 import { AssignmentDetailComponent } from './assignments/assignment-detail/assignment-detail.component';
 import { AddAssignmentComponent } from './assignments/add-assignment/add-assignment.component';
-import {MatSidenavModule} from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -31,10 +28,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     RenduDirective,
     NonRenduDirective,
     AssignmentDetailComponent,
-    AddAssignmentComponent,
-    
-    
-    
+    AddAssignmentComponent
   ],
   imports: [
     BrowserModule,

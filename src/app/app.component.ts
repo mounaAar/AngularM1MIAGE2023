@@ -9,7 +9,4 @@ export class AppComponent {
   titre = 'Application de gestion de devoirs';
   nomProf = 'Michel Buffa';
   x = 3;
-  opened=false;
 }
-
-
